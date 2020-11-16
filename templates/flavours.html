@@ -1,0 +1,72 @@
+{% extends "template.html" %} {% load static %} {% load i18n %}
+{% load trans_tag %}
+{% block head %}
+<title>Baskotii | Flavours</title>
+{% endblock %} {% block content %}
+<!-- The small order section -->
+<section id="section-order">
+  <!-- Order Container -->
+  <div class="container">
+    <div class="container__logo" style="display: none">
+      <img
+        class="content-center__logo"
+        src="{% static 'img/logo-light.png' %}"
+        alt="logo"
+      />
+      <div class="content-center__text">
+        <h1 class="content-center__name">{% trans 'Baskotii' %}</h1>
+        <p class="content-center__desc">{% trans 'Emarati Biscuits' %}</p>
+      </div>
+    </div>
+
+    <div class="container__back">
+      <a href="{% url 'core:index' %}">
+      
+        {%if LANGUAGE_CODE == 'ar' %}
+
+        <i class="fas fa-2x fa-long-arrow-alt-right"></i>
+        {%else%}
+
+        <i class="fas fa-2x fa-long-arrow-alt-left"></i>
+        {% endif %}
+      
+      </a>
+      <h1>{{ product.name|template_trans }} {% trans 'Flavours' %}</h1>
+    </div>
+    <!-- Flavours list -->
+    <ul class="container__flavours">
+      <!-- Flavour item -->
+      {% for item in product.flavour_set.all %}
+      <a href="{% url 'core:flavour' product.pk item.pk %}">
+        <li class="container__flavours-item">
+          <div class="container__flavours-item_text">
+            <h2>{{ item.name|template_trans }}</h2>
+            <p>{{item.description|template_trans }}</p>
+            <p>AED {{ item.price }}</p>
+          </div>
+          <img src="{{ item.image.url }}" alt="Poruduct" />
+        </li>
+      </a>
+      {% endfor %}
+    </ul>
+
+    <a class="container__btn" href="{% url 'core:order' %}">
+      <span class="left" style="float: left"></span>
+      {% trans "Review Order" %}
+      <span class="right" style="float: right"></span>
+    </a>
+  </div>
+</section>
+{% endblock %} {% block javascript %}
+
+<script>
+  let btn = document.querySelector(".container__btn");
+  if (ST.eligible_for_order()) {
+    document.querySelector(".left").innerHTML = ST.get_quantites();
+    document.querySelector(".right").innerHTML = `AED ${ST.get_total()}`;
+  } else {
+    btn.style.display = "none";
+  }
+</script>
+
+{% endblock %}

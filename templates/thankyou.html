@@ -1,0 +1,26 @@
+{% extends "template.html" %}
+{% load static %}
+{% load i18n %}
+{% block head %}
+<title>{%trans "Area" %}</title>
+{% endblock %}
+
+{% block content %}
+        <!-- The small order section -->
+        <section id="section-order">
+
+            <!-- Order Container -->
+            <div class="container">
+
+                <div class="container__logo" style="display: none;">
+                    <img class="content-center__logo" src="{% static 'img/logo-light.png' %}" alt="logo">
+                    <div class="content-center__text">
+                        <h1 class="content-center__name">{% trans 'Baskotii' %}</h1>
+                        <p class="content-center__desc">{%trans 'Emarati Biscuits' %}</p>
+                    </div>
+                </div>
+
+            <h1>{%trans "Thank you for your order. Your order Id :" %} {{ id }}</h1>
+            </div>
+        </section>
+{% endblock %}

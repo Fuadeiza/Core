@@ -1,0 +1,83 @@
+{% extends "template.html" %}
+{% load static %}
+{% load i18n %}
+{% block head %}
+<title>Baskotii | Search</title>
+{% endblock %}
+
+{% block content %}
+        <!-- The small order section -->
+        <section id="section-order">
+
+            <!-- Order Container -->
+            <div class="container">
+
+                <div class="container__logo" style="display: none;">
+                    <img class="content-center__logo" src="{% static 'img/logo-light.png' %}" alt="logo">
+                    <div class="content-center__text">
+                        <h1 class="content-center__name">{% trans 'Baskotii' %}</h1>
+                        <p class="content-center__desc">{% trans 'Emarati Biscuits' %}</p>
+                    </div>
+                </div>
+
+                <!-- Search input -->
+                <div class="container__search">
+                    <input id="search" type="text" placeholder="{% trans 'search' %}">
+                    <a href="{% url 'core:index' %}">{% trans 'Cancel' %}</a>
+                </div>
+
+                <!-- Flavours list -->
+                <ul class="container__flavours" style="margin-top: 20px;">
+
+                    <!-- <a href="#">
+                        <li class="container__flavours-item">
+                            <div class="container__flavours-item_text">
+                                <h2>{{ item.name }}</h2>
+                                <p>{{ item.description }}</p>
+                                <p>AED {{ item.price }}</p>
+                            </div>
+                            <img src="{{ item.image.url }}" alt="Poruduct">
+                        </li>
+                    </a> -->
+
+                </ul>
+
+
+
+            </div>
+        </section>
+
+        <script>
+            let search = document.querySelector('#search')
+            let list = document.querySelector(".container__flavours")
+            search.addEventListener("input",()=>{
+                list.innerHTML = ''
+                fetch(`{% url 'core:search_ajax' %}?query=${search.value}`)
+                .then(response => response.text())
+                .then((data) => {
+                    let jj = JSON.parse(data).data
+                    if (jj.length > 0){
+                        jj.forEach(element => {
+                        let ele = document.createElement("a");
+                        ele.setAttribute("href",`/product/${element[5]}/${element[0]}/`)
+                        ele.innerHTML = `
+<li class="container__flavours-item">
+        <div class="container__flavours-item_text">
+            <h2>${element[2]}</h2>
+            <p>${element[3]}</p>
+            <p>AED ${element[4]}</p>
+        </div>
+        <img src="${element[1]}" alt="Poruduct">
+</li>
+                        `
+                        list.appendChild(ele)
+                    });
+                    }
+                    else{
+                        list.innerHTML = '<h2>Item Not Found</h2>'
+                    }
+
+                });
+            })
+        </script>
+{% endblock %}

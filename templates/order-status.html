@@ -1,0 +1,49 @@
+{% extends "template.html" %} {% load static %} {% load i18n %} {% block head %}
+<title>Baskotii | Order Status</title>
+{% endblock %} {% block content %}
+<!-- The small order section -->
+<section id="section-order">
+  <!-- Order Container -->
+  <div class="container">
+    <div class="container__logo" style="display: none">
+      <img
+        class="content-center__logo"
+        src="{% static 'img/logo-light.png' %}"
+        alt="logo"
+      />
+      <div class="content-center__text">
+        <h1 class="content-center__name">{% trans 'Baskotii' %}</h1>
+        <p class="content-center__desc"> {% trans 'Emarati Biscuits' %}</p>
+      </div>
+    </div>
+
+    <!-- Search input -->
+    <div class="container__search">
+      <input id="input" type="text" placeholder="{% trans 'Order Code' %}" />
+      <a href="{% url 'core:index' %}">{%trans "Cancel" %}</a>
+    </div>
+    <div>
+      <h1 id="status">{% trans "Not Found" %}</h1>
+    </div>
+  </div>
+</section>
+
+<script>
+  let status = document.querySelector("#status");
+  let input = document.querySelector("#input");
+
+  input.addEventListener("input", () => {
+    status.innerHTML = "";
+    fetch(`{% url 'core:track_ajax' %}?query=${input.value}`)
+      .then((response) => response.text())
+      .then((data) => {
+        let jj = JSON.parse(data);
+        if (jj.found) {
+          status.innerHTML = "Order Status : " + jj.data;
+        } else {
+          status.innerHTML = "Order Not Found";
+        }
+      });
+  });
+</script>
+{% endblock %}

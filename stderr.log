@@ -1,0 +1,142 @@
+2020-11-03 05:28:05.410177 [ERROR] [UID:1506][7790] Fail to open file /home/baskotii/myapp/passenger_wsgi.py. 
+2020-11-03 05:28:05.410696 [UID:1506][7786] Child process with pid: 7790 was killed by signal: 15, core dump: 0
+Error While Sending Email
+error while sending msg
+Error While Sending Email
+error while sending msg
+Forbidden (CSRF cookie not set.): /admin/login/
+Forbidden (CSRF cookie not set.): /admin/login/
+Forbidden (CSRF cookie not set.): /admin/login/
+Not Found: /admin/l
+Error While Sending Email
+error while sending msg
+Error While Sending Email
+error while sending msg
+Error While Sending Email
+error while sending msg
+Error While Sending Email
+error while sending msg
+Error While Sending Email
+error while sending msg
+Error While Sending Email
+error while sending msg
+Error While Sending Email
+error while sending msg
+Error While Sending Email
+error while sending msg
+Error While Sending Email
+error while sending msg
+Forbidden (CSRF cookie not set.): /i18n/setlang/
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Error While Sending Email
+error while sending msg
+Not Found: /robots.txt
+Not Found: /favicon.ico
+Error While Sending Email
+error while sending msg
+Internal Server Error: /checkout/confirm/
+Traceback (most recent call last):
+  File "/home/baskotii/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/baskotii/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/baskotii/myapp/core/views.py", line 128, in confirm
+    msg.send()
+  File "/home/baskotii/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/mail/message.py", line 284, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/baskotii/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/mail/backends/smtp.py", line 102, in send_messages
+    new_conn_created = self.open()
+  File "/home/baskotii/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/mail/backends/smtp.py", line 69, in open
+    self.connection.login(self.username, self.password)
+  File "/opt/alt/python37/lib64/python3.7/smtplib.py", line 730, in login
+    raise last_exception
+  File "/opt/alt/python37/lib64/python3.7/smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "/opt/alt/python37/lib64/python3.7/smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'Incorrect authentication data')
+Error While Sending Email
+error while sending msg
+Not Found: /robots.txt
+Not Found: /Microsoft-Server-ActiveSync
+Not Found: /Microsoft-Server-ActiveSync
+Not Found: /Microsoft-Server-ActiveSync
+error while sending msg
+error while sending msg
+error while sending msg
+Not Found: /favicon.ico
+Not Found: /2083
+Not Found: /favicon.ico
+Forbidden (CSRF cookie not set.): /admin/login/
+Not Found: /favicon.ico
+error while sending msg
+error while sending msg
+error while sending msg
+error while sending msg
+error while sending msg
+Internal Server Error: /checkout/confirm/
+Traceback (most recent call last):
+  File "/home/baskotii/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/baskotii/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/baskotii/myapp/core/views.py", line 136, in confirm
+    to=+o.phone
+TypeError: bad operand type for unary +: 'str'
+Internal Server Error: /checkout/confirm/
+Traceback (most recent call last):
+  File "/home/baskotii/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/baskotii/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/baskotii/myapp/core/views.py", line 136, in confirm
+    to=o.phone
+TypeError: bad operand type for unary +: 'str'
+Internal Server Error: /checkout/confirm/
+Traceback (most recent call last):
+  File "/home/baskotii/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/baskotii/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/baskotii/myapp/core/views.py", line 136, in confirm
+    to=o.phone
+  File "/home/baskotii/virtualenv/myapp/3.7/lib/python3.7/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 88, in create
+    payload = self._version.create(method='POST', uri=self._uri, data=data, )
+  File "/home/baskotii/virtualenv/myapp/3.7/lib/python3.7/site-packages/twilio/base/version.py", line 205, in create
+    raise self.exception(method, uri, response, 'Unable to create record')
+twilio.base.exceptions.TwilioRestException: HTTP 400 error: Unable to create record: The 'To' number +971432423432434 is not a valid phone number.
+Internal Server Error: /checkout/confirm/
+Traceback (most recent call last):
+  File "/home/baskotii/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/baskotii/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/baskotii/myapp/core/views.py", line 136, in confirm
+    to=o.phone
+  File "/home/baskotii/virtualenv/myapp/3.7/lib/python3.7/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 88, in create
+    payload = self._version.create(method='POST', uri=self._uri, data=data, )
+  File "/home/baskotii/virtualenv/myapp/3.7/lib/python3.7/site-packages/twilio/base/version.py", line 205, in create
+    raise self.exception(method, uri, response, 'Unable to create record')
+twilio.base.exceptions.TwilioRestException: HTTP 400 error: Unable to create record: The 'To' number +971432423432434 is not a valid phone number.
+Internal Server Error: /checkout/confirm/
+Traceback (most recent call last):
+  File "/home/baskotii/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/baskotii/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/baskotii/myapp/core/views.py", line 136, in confirm
+    to=o.phone
+  File "/home/baskotii/virtualenv/myapp/3.7/lib/python3.7/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 88, in create
+    payload = self._version.create(method='POST', uri=self._uri, data=data, )
+  File "/home/baskotii/virtualenv/myapp/3.7/lib/python3.7/site-packages/twilio/base/version.py", line 205, in create
+    raise self.exception(method, uri, response, 'Unable to create record')
+twilio.base.exceptions.TwilioRestException: HTTP 400 error: Unable to create record: The 'To' number +971432423432434 is not a valid phone number.
+error while sending msg
+SM0102a53ad86d4886a28923d423475f9b
+SMc26ad4d669a444688897777238c2c4ef
+Not Found: /robots.txt
+Not Found: /favicon.ico
+SMfb035b76911843f09ed9455a8012bbf3
+SM2bd5216442fd48d6992f7560c57dfd80
+Not Found: /robots.txt

@@ -1,0 +1,141 @@
+{% extends "template.html" %} {% load static %} {% load i18n %} {% load trans_tag %} {% block head %}
+<title>Baskotii | Review</title>
+{% endblock %} {% block content %}
+<!-- The small order section -->
+<section id="section-order-flavour">
+  <!-- Order Container -->
+  <div class="container">
+    <!-- Logo -->
+    <div class="container__logo" style="display: none">
+      <img
+        class="content-center__logo"
+        src="{% static 'img/logo-light.png' %}"
+        alt="logo"
+      />
+      <div class="content-center__text">
+        <h1 class="content-center__name">{% trans 'Baskotii' %}</h1>
+        <p class="content-center__desc">{%trans 'Emarati Biscuits' %}</p>
+      </div>
+    </div>
+
+    <div class="container__back" style="margin-top: 1rem; margin-left: 1rem">
+      <a id="refferer" href="#">
+        {%if LANGUAGE_CODE == 'ar' %}
+        <i class="fas fa-2x fa-long-arrow-alt-right"></i>
+        {%else%}
+
+        <i class="fas fa-2x fa-long-arrow-alt-left"></i>
+        {% endif %}</a>
+      <h1>{%trans "Review Order" %}</h1>
+    </div>
+
+    <div class="container__items">
+      <ul class="container__items-list">
+        <h1>{% trans "Order Items" %}</h1>
+      </ul>
+    </div>
+
+    <div class="container__total">
+      <p>{% trans "Subtotal" %}</p>
+      <p>AED <span id="subtotal">{{ subtotal }}</span></p>
+    </div>
+
+    <div id="delivery" class="container__total"></div>
+
+    <div class="container__total">
+      <p>{% trans "Total" %}</p>
+      <p>AED <span id="total">{{ total }}</span></p>
+    </div>
+
+    <!-- Button -->
+    <a class="container__btn" href="{% url 'core:contact' %}"
+      >{% trans "Proceed to checkout" %}</a
+    >
+  </div>
+</section>
+
+{% endblock %} {% block javascript %}
+<script type="text/javascript" src="{% url 'javascript-catalog' %}"></script>
+<script>
+  if (!ST.eligible_for_order()) {
+    window.location.href = "{% url 'core:index' %}";
+  }
+
+  let parent = document.querySelector(".container__items-list");
+  let subtotal = document.getElementById("subtotal");
+  let total = document.getElementById("total");
+  let shipping_element = document.getElementById("delivery");
+
+  let shipping = ST.data.shipping;
+
+  subtotal.innerHTML = ST.get_total() - shipping;
+  shipping_element.innerHTML = shipping;
+  total.innerHTML = ST.get_total();
+
+  if (shipping) {
+    shipping_element.innerHTML = `<p>{% trans 'Delivery' %}</p> <p>AED ${shipping}</p>`;
+  } else {
+    shipping_element.innerHTML = `<p>{% trans 'Delivery' %}</p> <p><a href="{% url 'core:select_area' %}?redirect=order">Select Area To Know Shipping</a></p>`;
+  }
+
+  ST.data.cart.forEach((item) => {
+    let element = document.createElement("li");
+    element.classList = ['container__items-list-item'];
+    element.innerHTML = `
+<div class="container__items-list-item-text">
+    <h2>${item.flavour_name} ${item.product_name}</h2>
+    <p>AED <span id="price">${item.price}</span></p>
+</div>
+
+<div class="container__items-list-item-quantity">
+    <!-- Quantity -->
+    <div class="container__items-list-item-quantity-control">
+        <i class="fas fa-plus-circle" onclick='increment(${item.pk},this)'></i>
+        <p>${item.quantity}</p>
+        <i class="fas fa-minus-circle" onclick='decrement(${item.pk},this)'></i>
+    </div>
+
+    <!-- Remove -->
+    <a href="#" onclick="remove(${item.pk},this)" class="container__items-list-item-quantity-remove">Remove</a>
+</div>   
+`;
+    parent.appendChild(element);
+  });
+
+  let increment = (pk, ele) => {
+    let item = ST.get_item(pk);
+    ele.nextElementSibling.innerHTML = item.quantity + 1;
+    ST.increment(pk);
+    subtotal.innerHTML = parseInt(subtotal.innerHTML) + item.price;
+    total.innerHTML = parseInt(total.innerHTML) + item.price;
+  };
+  let decrement = (pk, ele) => {
+    let item = ST.get_item(pk);
+    if (item.quantity > 1) {
+      ele.previousElementSibling.innerHTML = item.quantity - 1;
+      ST.decrement(pk);
+      subtotal.innerHTML = parseInt(subtotal.innerHTML) - item.price;
+      total.innerHTML = parseInt(total.innerHTML) - item.price;
+    }
+  };
+
+  let remove = (pk, ele) => {
+    let item = ST.get_item(pk);
+    ele.parentElement.parentElement.hidden = true;
+    subtotal.innerHTML =
+      parseInt(subtotal.innerHTML) - item.price * item.quantity;
+    total.innerHTML = parseInt(total.innerHTML) - item.price * item.quantity;
+    ST.remove_item(pk);
+  };
+
+  document
+    .querySelector("#refferer")
+    .setAttribute(
+      "href",
+      document.referrer.endsWith("/confirm/")
+        ? document.referrer
+        : '{% url "core:index" %}'
+    );
+</script>
+
+{% endblock %}

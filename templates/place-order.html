@@ -1,0 +1,176 @@
+{% extends "template.html" %} {% load static %} {% load i18n %} {% block head %}
+<title>Baskotii | Place Order</title>
+{% endblock %} {% block content %}
+<!-- The small order section -->
+<section id="section-order-flavour">
+  <!-- Order Container -->
+  <div class="container">
+    <!-- Logo -->
+    <div class="container__logo" style="display: none">
+      <img
+        class="content-center__logo"
+        src="{% static 'img/logo-light.png' %}"
+        alt="logo"
+      />
+      <div class="content-center__text">
+        <h1 class="content-center__name">{%trans 'Baskotii' %}</h1>
+        <p class="content-center__desc">{% trans 'Emarati Biscuits' %}</p>
+      </div>
+    </div>
+
+    <div class="container__back" style="margin-top: 1rem; margin-left: 1rem">
+      <a href="{% url 'core:contact' %}"
+        > {%if LANGUAGE_CODE == 'ar' %}
+
+        <i class="fas fa-2x fa-long-arrow-alt-right"></i>
+        {%else%}
+
+        <i class="fas fa-2x fa-long-arrow-alt-left"></i>
+        {% endif %}</a>
+      <h1>{%trans "Place Order" %}</h1>
+    </div>
+
+    <div style="display: flex; align-items: center">
+      <h2 class="container__contact">{%trans "Order Items" %}</h2>
+      {%if LANGUAGE_CODE == 'ar' %}
+      <a href="{% url 'core:order' %}"
+        style="margin-right: auto; margin-left: 2.5rem"
+        ><i class="fas fa-2x fa-angle-left"></i
+      ></a>
+
+      {%else%}     
+
+      <a href="{% url 'core:order' %}"
+      style="margin-left: auto; margin-right: 2.5rem"
+      ><i class="fas fa-2x fa-angle-right"></i
+    ></a>
+        {% endif %}
+    </div>
+    <ul
+      class="container__items-list"
+      style="margin: 0 2.5rem; border-bottom: solid #e2e8f0 1px"
+    ></ul>
+
+    <div
+      class=""
+      style="border-bottom: solid #e2e8f0 1px; padding-bottom: 2rem"
+    >
+      <h2 class="container__contact">{%trans "Delivery Info" %}</h2>
+      {%if LANGUAGE_CODE == 'ar' %}
+      <div class="container__info">
+        <i class="fas fa-2x fa-home"></i>
+        <div class="container__info-text">
+          <h3><span id="area"></span></h3>
+          <p><span id="street"></span></p>
+        </div>
+
+        <a
+          href="{% url 'core:select_area' %}?redirect=confirm"
+          style="margin-right: auto"
+          ><i class="fas fa-angle-left"></i
+        ></a>
+      </div>
+
+      <div class="container__info">
+        <i class="fas fa-2x fa-phone-alt"></i>
+        <div class="container__info-text">
+          <h3><span id="name"></span></h3>
+          <p>+<span id="phone"></span></p>
+        </div>
+        <a href="{% url 'core:contact' %}" style="margin-right: auto"
+          ><i class="fas fa-angle-left"></i
+        ></a>
+      </div>
+    </div>
+
+    {%else%}
+    <div class="container__info">
+    <i class="fas fa-2x fa-home"></i>
+    <div class="container__info-text">
+      <h3><span id="area"></span></h3>
+      <p><span id="street"></span></p>
+    </div>
+
+    <a
+      href="{% url 'core:select_area' %}?redirect=confirm"
+      style="margin-left: auto"
+      ><i class="fas fa-angle-right"></i
+    ></a>
+  </div>
+
+  <div class="container__info">
+    <i class="fas fa-2x fa-phone-alt"></i>
+    <div class="container__info-text">
+      <h3><span id="name"></span></h3>
+      <p>+<span id="phone"></span></p>
+    </div>
+    <a href="{% url 'core:contact' %}" style="margin-left: auto"
+      ><i class="fas fa-angle-right"></i
+    ></a>
+  </div>
+</div>
+
+    {%endif%}
+
+    <div class="container__total">
+      <p>{% trans "Subtotal" %}</p>
+      <p>AED <span id="sub_total"></span></p>
+    </div>
+
+    <div class="container__total">
+      <p>{% trans "Delivery" %}</p>
+      <p>AED <span id="shipping"></span></p>
+    </div>
+
+    <div class="container__total">
+      <p>{% trans "Total" %}</p>
+      <p>AED <span id="total"></span></p>
+    </div>
+
+    <!-- Button -->
+    <form method="POST">
+      {% csrf_token %}
+      <input type="hidden" name="ST" id="ST" />
+      <button
+        type="submit"
+        class="container__btn"
+        style="border: none; color: black; cursor: pointer"
+      >
+        {% trans "Place Order" %}
+      </button>
+    </form>
+  </div>
+</section>
+{% endblock %} {% block javascript %}
+<script>
+  if (!ST.eligible_for_confirm()) {
+    window.location.href = "{% url 'core:index' %}";
+  }
+
+  document.getElementById("area").innerHTML = ST.data.area;
+  document.getElementById("phone").innerHTML = ST.data.phone;
+  document.getElementById("sub_total").innerHTML =
+    ST.get_total() - ST.data.shipping;
+  document.getElementById("shipping").innerHTML = ST.data.shipping;
+  document.getElementById("total").innerHTML = ST.get_total();
+
+  let parent = document.querySelector(".container__items-list");
+
+  ST.data.cart.forEach((value) => {
+    let newele = document.createElement("li");
+    newele.classList = ["container__items-list-item"];
+    newele.innerHTML = `
+<div class="container__items-list-item-text">
+    <h2>${value.quantity}x &nbsp; ${value.flavour_name} ${value.product_name}</h2>
+    <p>AED ${value.price}</p>
+</div>
+`;
+    parent.appendChild(newele);
+  });
+
+  document.querySelector("form").addEventListener("submit", (event) => {
+    document.querySelector("#ST").value = JSON.stringify(ST.data);
+    ST.reset_cart();
+  });
+</script>
+{% endblock %}

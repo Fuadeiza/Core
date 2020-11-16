@@ -1,0 +1,2107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-27 18:54+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: .\Project\settings.py:146
+msgid "English"
+msgstr ""
+
+#: .\Project\settings.py:147
+msgid "Arabic"
+msgstr ""
+
+#: .\templates\area.html:16 .\templates\checkout.html:19
+#: .\templates\flavour.html:19 .\templates\flavours.html:17
+#: .\templates\index.html:16 .\templates\order-status.html:15
+#: .\templates\place-order.html:16 .\templates\review.html:16
+#: .\templates\search.html:20 .\templates\template.html:84
+#: .\templates\thankyou.html:18
+msgid "Baskotii"
+msgstr "بسكوتي"
+
+#: .\templates\area.html:17 .\templates\checkout.html:20
+#: .\templates\flavour.html:20 .\templates\flavours.html:18
+#: .\templates\index.html:17 .\templates\order-status.html:16
+#: .\templates\place-order.html:17 .\templates\review.html:17
+#: .\templates\search.html:21 .\templates\template.html:85
+#: .\templates\thankyou.html:19
+msgid "Emarati Biscuits"
+msgstr "بسكويت امارتي"
+
+#: .\templates\area.html:24 .\templates\order-status.html:23
+#: .\templates\search.html:28
+msgid "Cancel"
+msgstr "الغاء"
+
+#: .\templates\checkout.html:27
+msgid "Checkout"
+msgstr "اتمام الطلب"
+
+#: .\templates\checkout.html:42
+msgid "Contact Information"
+msgstr "معلومات الاتصال"
+
+#: .\templates\checkout.html:49
+msgid "Delivery Address"
+msgstr "معلومات التوصيل"
+
+#: .\templates\checkout.html:64 .\templates\place-order.html:25
+#: .\templates\place-order.html:97
+msgid "Place Order"
+msgstr "اتمام الطلب"
+
+msgid "Thank you for your order. Your order Id :"
+msgstr "شكرا لاختياركم بسكوتي ، رقم الطلب :" 
+
+
+#: .\templates\flavour.html:35
+msgid "Price"
+msgstr "السعر"
+
+#: .\templates\flavour.html:49
+msgid "Add to order"
+msgstr "اضف الى الطلب"
+
+#: .\templates\flavours.html:26
+msgid "Flavours"
+msgstr "( النكهات )"
+
+#: .\templates\flavours.html:27 .\templates\translate.html:43
+msgid "Boksum"
+msgstr "بقسم"
+
+#: .\templates\flavours.html:28 .\templates\translate.html:44
+msgid "Rusk"
+msgstr "شابورة"
+
+#: .\templates\flavours.html:29 .\templates\translate.html:45
+msgid "Biscuits"
+msgstr "بسكويت"
+
+#: .\templates\flavours.html:30 .\templates\translate.html:46
+msgid "Diet"
+msgstr "دايت"
+
+#: .\templates\flavours.html:31 .\templates\translate.html:47
+msgid "Boksum Flavuors"
+msgstr "نكهات البقسم"
+
+#: .\templates\flavours.html:32 .\templates\translate.html:48
+msgid "Rusk Flavuors"
+msgstr "نكهات الشابورة"
+
+#: .\templates\flavours.html:33 .\templates\translate.html:49
+msgid "Biscuits Flavuors"
+msgstr "نكهات البسكويت"
+
+#: .\templates\flavours.html:34 .\templates\flavours.html:47
+#: .\templates\translate.html:21
+msgid "Large box rusk with Nescafe"
+msgstr "بوكس كبير شابوره نسكافية"
+
+#: .\templates\flavours.html:35 .\templates\translate.html:9
+msgid "Large box mini saltiest"
+msgstr "بوكس كبير ميني موالح"
+
+#: .\templates\flavours.html:36 .\templates\translate.html:10
+msgid "Small box saltiest"
+msgstr "بوكس صغير موالح"
+
+#: .\templates\flavours.html:37 .\templates\translate.html:11
+msgid "Boksum box with dates syrup"
+msgstr "بوكس بقصم دبس التمر"
+
+#: .\templates\flavours.html:38 .\templates\translate.html:12
+msgid "Boksum box with Cardamom and saffron"
+msgstr "بوكس بقصم هيل وزعفران"
+
+#: .\templates\flavours.html:39 .\templates\translate.html:13
+msgid "Boksum box with anise and fennel"
+msgstr "بوكس بقصم يانسون وشمر"
+
+#: .\templates\flavours.html:40 .\templates\translate.html:14
+msgid "Mini box boksum (Cardamom and saffron)"
+msgstr "بوكس ميني بقصم (هيل والزعفران )"
+
+#: .\templates\flavours.html:41 .\templates\translate.html:15
+msgid "Mini box boksum (Anise and fennel)"
+msgstr "بوكس ميني بقصم (نسون وشمر  )"
+
+#: .\templates\flavours.html:42 .\templates\translate.html:16
+msgid "Mini box boksum (Dates Syrup)"
+msgstr "بوكس ميني بقصم (دبس التمر )"
+
+#: .\templates\flavours.html:43 .\templates\translate.html:17
+msgid "Large box rusk with cardamom and saffron"
+msgstr "بوكس كبير شابوره هيل وزعفران"
+
+#: .\templates\flavours.html:44 .\templates\translate.html:18
+msgid "Large box rusk with Anise and fennel"
+msgstr "بوكس كبير شابوره يانسون وشمر"
+
+#: .\templates\flavours.html:45 .\templates\translate.html:19
+msgid "Large box rusk with ginger"
+msgstr "بوكس كبير شابوره زنجبيل"
+
+#: .\templates\flavours.html:46 .\templates\translate.html:20
+msgid "Large box rusk with Cocunut"
+msgstr "بوكس كبير شابوره جوز الهند"
+
+#: .\templates\flavours.html:48 .\templates\translate.html:22
+msgid "Large box rusk with pistachio"
+msgstr "بوكس كبير شابوره فستق"
+
+#: .\templates\flavours.html:49 .\templates\translate.html:23
+msgid "Large Box rusk with cinnamon "
+msgstr "بوكس كبير شابوره قرفة"
+
+#: .\templates\flavours.html:50 .\templates\translate.html:24
+msgid "Basuity Box:"
+msgstr "بوكس بسكوتي"
+
+#: .\templates\flavours.html:51 .\templates\translate.html:25
+msgid "Boksum without Sugar"
+msgstr "بوكس بقصم بدون سكر"
+
+#: .\templates\flavours.html:52 .\templates\translate.html:26
+msgid "Small Box Diet Rusk"
+msgstr "بوكس صغير شابوره دايت"
+
+#: .\templates\flavours.html:53 .\templates\translate.html:27
+msgid "Contains 60 envelopes of mini mixed saltiest (anise and fennel - thyme - sumac - sesame - black seeds - spicy - cumin) suitable for distribution"
+msgstr "يحتوي على 60 مغلف ميني موالح مشكل ( يانسون وشمر - زعتر - سماق - سمسم - حبه البركة - سبايسي - كمون ) مناسب للتوزيعات "
+
+#: .\templates\flavours.html:54 .\templates\translate.html:28
+msgid "Contains 35 envelopes of mini mixed saltiest (anise and fennel - thyme - sumac - sesame - black seeds - spicy - cumin)"
+msgstr "يحتوي على 35 مغلف بسكويت مالح مشكل ( يانسون وشمر - زعتر - سماق - سمسم - حبهالبركة - سبايسي - كمون )"
+
+#: .\templates\flavours.html:55 .\templates\translate.html:29
+msgid "Contains 30 envelopes of sage, flavored with date syrup (no sugar)."
+msgstr " يحتوي على 30 مغلف من البقصم بنكهة دبس التمر ( بدون سكر )"
+
+#: .\templates\flavours.html:56 .\templates\translate.html:30
+msgid "Contains 30 envelopes of sesame flavored with cardamom and saffron"
+msgstr "يحتوي على 30 مغلف من البقصم بنكهة الهيل والزعفران"
+
+#: .\templates\flavours.html:57 .\templates\translate.html:31
+msgid "Contains 30 envelopes of sesame seeds, anise and fennel flavor"
+msgstr "يحتوي على 30 مغلف من البقصم بنكهة يانسون وشمر"
+
+#: .\templates\flavours.html:58 .\templates\translate.html:32
+msgid "Contains 60 envelopes of mini boksum"
+msgstr "يحتوي على 60 مغلف من ميني البقصم"
+
+#: .\templates\flavours.html:59 .\templates\translate.html:33
+msgid ""
+"The box contains 32 envelopes, and each envelope contains 2 pieces of rusk cardamom and saffron"
+msgstr "يحتوي البوكس على 32 مغلف وكل مغلف فيه قطعتين من شابوره هيل وزعفران"
+
+#: .\templates\flavours.html:60 .\templates\translate.html:34
+msgid "The box contains 32 envelopes, and each envelope contains 2 pieces of anise and fennel rusk"
+msgstr "يحتوي البوكس على 32 مغلف وكل مغلف فيه قطعتين من شابوره يانسون وشمر"
+
+#: .\templates\flavours.html:61 .\templates\translate.html:35
+msgid "The box contains 32 envelopes, and each envelope contains 2 pieces of ginger rusk"
+msgstr "يحتوي البوكس على 32 مغلف وكل مغلف فيه قطعتين من شابوره زنجبيل"
+
+#: .\templates\flavours.html:62 .\templates\translate.html:36
+msgid "The box contains 32 envelopes, and each envelope contains 2 pieces of coconut rusk"
+msgstr "يحتوي البوكس على 32 مغلف وكل مغلف فيه قطعتين من شابوره جوز الهند"
+
+#: .\templates\flavours.html:63 .\templates\translate.html:37
+msgid "The box contains 32 envelopes, and each envelope contains 2 pieces of nescafe rusk"
+msgstr " يحتوي البوكس على 32 مغلف وكل مغلف فيه قطعتين من شابوره نسكافية"
+
+#: .\templates\flavours.html:64 .\templates\translate.html:38
+msgid "The box contains 32 envelopes, and each envelope contains 2 pieces of pistachio rusk"
+msgstr "يحتوي البوكس على 32 مغلف وكل مغلف فيه قطعتين من شابوره فستق"
+
+#: .\templates\flavours.html:65 .\templates\translate.html:39
+msgid "The box contains 32 envelopes, and each envelope contains 2 pieces of cinnamon rusk"
+msgstr "يحتوي البوكس على 32 مغلف وكل مغلف فيه قطعتين من شابوره قرفة"
+
+#: .\templates\flavours.html:66 .\templates\translate.html:40
+msgid "(To try the best biscuits at Biscotti) the box contains: 10  envelopes rusk, 10 envelopes citrus mixed, 10 envelopes of date molasses crackers, 10 envelopes of cardamom and saffron"
+msgstr "(لتجربه الذ انواع البسكويت لدى بسكوتي) يحتوي البوكس على عشر مغلفات شابورة ،عشر مغلفات موالح مشكلة ، عشر مغلفات بقصم دبس التمر ، عشر مغلفات هيل وزعفران"
+
+#: .\templates\flavours.html:67 .\templates\translate.html:41
+msgid "Contains 30 sachets of sesame seeds, anise flavor and fennel without sugar (with whole wheat flour)"
+msgstr "يحتوي على 30 مغلف من البقصم بنكهة يانسون وشمر بدون سكر ( بالدقيق القمحالكامل )"
+
+#: .\templates\flavours.html:68 .\templates\translate.html:42
+msgid "The box contains 20 sachets of Diet Rusk, flavored with anise and fennel, without sugar"
+msgstr "يحتوي البوكس على 20 مغلف من شابوره دايت بنكهة يانسون وشمر بدون سكر"
+
+#: .\templates\flavours.html:96 .\templates\index.html:48
+#: .\templates\review.html:25
+msgid "Review Order"
+msgstr "راجع طلبك"
+
+#: .\templates\index.html:23
+msgid "Area"
+msgstr "المنطقة"
+
+#: .\templates\index.html:25
+msgid "Choose Area"
+msgstr "اختر منطقتك"
+
+#: .\templates\order-status.html:26
+msgid "Not Found"
+msgstr "غير موجود"
+
+#: .\templates\place-order.html:29 .\templates\review.html:30
+msgid "Order Items"
+msgstr "الطلبات"
+
+#: .\templates\place-order.html:45
+msgid "Delivery Info"
+msgstr "معلومات التوصيل"
+
+#: .\templates\place-order.html:74 .\templates\review.html:35
+msgid "Subtotal"
+msgstr "مجموع الطلب"
+
+#: .\templates\place-order.html:79
+msgid "Delivery"
+msgstr "رسوم التوصيل"
+
+#: .\templates\place-order.html:84 .\templates\review.html:42
+msgid "Total"
+msgstr "المجموع"
+
+#: .\templates\review.html:48
+msgid "Proceed to checkout"
+msgstr "اتمام الطلب"
+
+#: .\templates\template.html:34
+msgid "Menu"
+msgstr "القائمة"
+
+#: .\templates\template.html:37
+msgid "Search"
+msgstr "بحث"
+
+#: .\templates\template.html:40
+msgid "Order Status"
+msgstr "حالة الطلب"
+
+#~ msgid "Diet Flavuors"
+#~ msgstr "نكهات الدايت"
+
+#~ msgid "Name"
+#~ msgstr "الاسم"
+
+#~ msgid "Phone Number"
+#~ msgstr "رقم الجوال"
+
+#~ msgid "Email"
+#~ msgstr "البريد الالكتروني"
+
+#~ msgid "Street"
+#~ msgstr "الشارع"
+
+#~ msgid "House no"
+#~ msgstr "رقم المنزل"
+
+#~ msgid "Special Directions"
+#~ msgstr "تغليمات اخرى"
+
+#~ msgid "In Progress"
+#~ msgstr "تم التأكيد"
+
+#~ msgid "On The Way"
+#~ msgstr "قيد التسليم"
+
+#~ msgid "Completed"
+#~ msgstr "تم التسليم"
+
+msgid "Masdar City"
+msgstr "مدينة مصدر"
+
+msgid "Mohammed Bin Zayed City"
+msgstr "مدينة محمد بن زايد"
+
+msgid "Mussafah Industrial city"
+msgstr "مدينة مصفح الصناعية"
+
+msgid "Mussafah South"
+msgstr "المصفح جنوب"
+
+msgid "New Shahama"
+msgstr "الشهامة الجديدة"
+
+msgid "Old Bahya"
+msgstr "بهية القديمة"
+
+msgid "Port Zayed (Al Mina)"
+msgstr "ميناء زايد (الميناء)"
+
+msgid "Qasr El Bahr"
+msgstr "قصر البحر"
+
+
+msgid "Order Code"
+msgstr "رمز الطلب"
+
+msgid "Qasr El Shatie"
+msgstr "قصر الشاطئ"
+
+msgid "Reem Island"
+msgstr "جزيرة الريم"
+
+msgid "Saadiyat Island"
+msgstr "جزيرة السعديات"
+
+msgid "Sas Al Nakheel (Khalifa- A)"
+msgstr "ساس النخيل (خليفة أ)"
+
+msgid "Sas Al Nakhl Island"
+msgstr "جزيرة ساس النخل"
+
+msgid "Shahama"
+msgstr "الشهامة"
+
+msgid "Shakhbout City"
+msgstr "مدينة شخبوط"
+
+msgid "Tourist Club Area (Al Zahiya)"
+msgstr "منطقة النادي السياحي (الزاهية)"
+
+msgid "Western Region (Madinat Zayed)"
+msgstr "المنطقة الغربية (مدينة زايد)"
+
+msgid "Yas Island"
+msgstr "جزيرة ياس"
+
+msgid "Zayed Sports City"
+msgstr "مدينة زايد الرياضية"
+
+msgid "Abu Shagara"
+msgstr "أبو شغارة"
+
+msgid "Al  Muntazah"
+msgstr "المنتزه"
+
+msgid "Al Abar"
+msgstr "العبار"
+
+msgid "Al Atain"
+msgstr "العطين"
+
+msgid "Al Azra"
+msgstr "العزرة"
+
+msgid "Al Bataeh"
+msgstr "البطائح"
+
+msgid "Al Bdai`a Subrub"
+msgstr "ضاحية البدائع"
+
+msgid "Al Darari"
+msgstr "الدراري"
+
+msgid "Al Dhaid"
+msgstr "الذيد"
+
+msgid "Al Elyash"
+msgstr "العليش"
+
+msgid "Al Falah Suburb"
+msgstr "ضاحية الفلاح"
+
+msgid "Al Falaj"
+msgstr "الفلج"
+
+msgid "Al Fayha"
+msgstr "الفيحاء"
+
+msgid "Al Fisht"
+msgstr "الفشت"
+
+msgid "Al Ghaphia"
+msgstr "الغافية"
+
+msgid "Al Gharayen"
+msgstr "القرائن"
+
+msgid "Al Ghubaiba"
+msgstr "الغبيبة"
+
+msgid "Al Ghuwair"
+msgstr "الغوير"
+
+msgid "Al Goaz"
+msgstr "الجواز"
+
+msgid "Al Hazana"
+msgstr "الحزانة"
+
+msgid "Al Homaa"
+msgstr "الحماة"
+
+msgid "Al Jazzat"
+msgstr "الجزات"
+
+msgid "Al Jubail"
+msgstr "الجبيل"
+
+msgid "Al Juraina"
+msgstr "الجرينة"
+
+msgid "Al Khaledia Suburb"
+msgstr "ضاحية الخالدية"
+
+msgid "Al Khan"
+msgstr "الخان"
+
+msgid "Al Khezamia"
+msgstr "الخزامية"
+
+msgid "Al Layyah"
+msgstr "اللية"
+
+msgid "Al Mahatta"
+msgstr "المحطة"
+
+msgid "Al Majaz 1"
+msgstr "المجاز 1"
+
+msgid "Al Majaz 2"
+msgstr "المجاز 2"
+
+msgid "Al Majaz 3"
+msgstr "المجاز 3"
+
+msgid "Al Mamzar"
+msgstr "الممزر"
+
+msgid "Al Manakh"
+msgstr "المناخ"
+
+msgid "Al Manazel"
+msgstr "المنازل"
+
+msgid "Al Mansura"
+msgstr "المنصورة"
+
+msgid "Al Mareija"
+msgstr "المريجة"
+
+msgid "Al Mirgab"
+msgstr "المرقاب"
+
+msgid "Al Mujarah"
+msgstr "المجرة"
+
+msgid "Al Musalla"
+msgstr "المصلى"
+
+msgid "Al Nabba"
+msgstr "النباعة"
+
+msgid "Al Nad"
+msgstr "الند"
+
+msgid "Al Nahda"
+msgstr "النهدة"
+
+msgid "Al Nasserya"
+msgstr "الناصرية"
+
+msgid "Al Nekhailat"
+msgstr "النخيلات"
+
+msgid "Al Noof"
+msgstr "النوف"
+
+msgid "Al Qadisia"
+msgstr "القادسية"
+
+msgid "Al Qasimia"
+msgstr "القاسمية"
+
+msgid "Al Qulayaa"
+msgstr "القليعة"
+
+msgid "Al Rahmania"
+msgstr "الرحمانية"
+
+msgid "Al Ramaqia"
+msgstr "الرماقية"
+
+msgid "Al Ramla East"
+msgstr "الرملة شرق"
+
+msgid "Al Ramla West"
+msgstr "الرملة غرب"
+
+msgid "Al Ramtha"
+msgstr "الرمثا"
+
+msgid "Al Rifah"
+msgstr "الرفاع"
+
+msgid "Al Riffa"
+msgstr "الرفاع"
+
+msgid "Al Sabkha"
+msgstr "السبخة"
+
+msgid "Al Seef"
+msgstr "السيف"
+
+msgid "Al Seyouh"
+msgstr "السيوح"
+
+msgid "Al Shahba"
+msgstr "الشهباء"
+
+msgid "Al Shuwaihen"
+msgstr "الشويهين"
+
+
+
+
+msgid "Al Sweihat"
+msgstr "السويحات"
+
+msgid "Al Taawun"
+msgstr "التعاون"
+
+msgid "Al Talaa"
+msgstr "الطلاع"
+
+msgid "Al Tarfa"
+msgstr "الطرفة"
+
+msgid "Al Yarmook"
+msgstr "اليرموك"
+
+msgid "Barashi"
+msgstr "براشي"
+
+msgid "Bu Danig"
+msgstr "بو دانيج"
+
+msgid "Bu Tina"
+msgstr "بو تينة"
+
+msgid "Dasman"
+msgstr "دسمان"
+
+msgid "Industrial Area 1"
+msgstr "المنطقة الصناعية 1"
+
+msgid "Industrial Area 10"
+msgstr "المنطقة الصناعية 10"
+
+msgid "Industrial Area 11"
+msgstr "المنطقة الصناعية 11"
+
+msgid "Industrial Area 12"
+msgstr "المنطقة الصناعية 12"
+
+msgid "Industrial Area 13"
+msgstr "المنطقة الصناعية 13"
+
+msgid "Industrial Area 15"
+msgstr "المنطقة الصناعية 15"
+
+msgid "Industrial Area 17"
+msgstr "المنطقة الصناعية 17"
+
+msgid "Industrial Area 18"
+msgstr "المنطقة الصناعية 18"
+
+msgid "Industrial Area 2"
+msgstr "المنطقة الصناعية 2"
+
+msgid "Industrial Area 3"
+msgstr "المنطقة الصناعية 3"
+
+msgid "Industrial Area 4"
+msgstr "المنطقة الصناعية 4"
+
+msgid "Industrial Area 5"
+msgstr "المنطقة الصناعية 5"
+
+msgid "Industrial Area 6"
+msgstr "المنطقة الصناعية 6"
+
+msgid "Industrial Area 7"
+msgstr "المنطقة الصناعية 7"
+
+msgid "Industrial Area 8"
+msgstr "المنطقة الصناعية 8"
+
+msgid "Industrial Area 9"
+msgstr "المنطقة الصناعية 9"
+
+msgid "Kalba"
+msgstr "كلباء"
+
+msgid "Khor Fakkan"
+msgstr "خورفكان"
+
+msgid "Maysaloon"
+msgstr "ميسلون"
+
+msgid "Muwafjah"
+msgstr "الموفجة"
+
+msgid "Muwaileh Commercial"
+msgstr "تجارية مويلح"
+
+msgid "Muzairah"
+msgstr "مزيرعة"
+
+msgid "Rolla"
+msgstr "رولا"
+
+msgid "Saif Zone"
+msgstr "منطقة السيف"
+
+msgid "Samnan"
+msgstr "سمنان"
+
+msgid "Sharqan"
+msgstr "شرقان"
+
+msgid "Um Altaraffa"
+msgstr "أم الطرافة"
+
+msgid "University of Sharjah"
+msgstr "جامعة الشارقة"
+
+
+msgid "Ajman Corniche"
+msgstr "كورنيش عجمان"
+
+msgid "Ajman Free Zone"
+msgstr "منطقة عجمان الحرة"
+
+msgid "Ajman Industrial Area 1 "
+msgstr "1 منطقة عجمان الصناعية"
+
+msgid "Ajman Industrial Area 2 "
+msgstr "منطقة عجمان الصناعية 2"
+
+
+msgid "Ajman University"
+msgstr "جامعة عجمان"
+
+
+msgid "Al Amerah"
+msgstr "العامرة"
+
+msgid "Al Bahia"
+msgstr "الباهية"
+
+
+msgid "Al Butain"
+msgstr "البطين"
+
+msgid "Al Hamidiya"
+msgstr "الحميدية"
+
+msgid "Al Hamidiya 1"
+msgstr "1 الحميدية"
+
+msgid "Al Hamidiya 2"
+msgstr "الحميدية 2"
+
+msgid "Al Helio"
+msgstr "الحليو"
+
+msgid "Al Heliow 1"
+msgstr "الحليو 1"
+
+msgid "Al Heliow 2"
+msgstr "الحليو 2"
+
+
+
+msgid "Al Jurf Industrial Area 1"
+msgstr "1 منطقة الجرف الصناعية"
+
+msgid "Al Jurf Industrial Area 2"
+msgstr "منطقة الجرف الصناعية 2"
+
+msgid "Al Jurf Industrial Area 3"
+msgstr "منطقة الجرف الصناعية 3"
+
+msgid "Al Muntazi 1"
+msgstr "المنتزي 1"
+
+msgid "Al Muntazi 2"
+msgstr "المنتزي 2"
+
+msgid "Al Mushairef"
+msgstr "المشيرف"
+
+msgid "Al Mwaihat 1"
+msgstr "1 المويهات"
+
+msgid "Al Mwaihat 2"
+msgstr "المويهات 2"
+
+msgid "Al Mwaihat 3"
+msgstr "المويهات 3"
+
+msgid "Al Nakhil"
+msgstr "النخيل"
+
+msgid "Al Nakhil 1"
+msgstr "1 النخيل"
+
+msgid "Al Nakhil 2"
+msgstr "2 النخيل"
+
+msgid "Al Nuaimia 1"
+msgstr "النعيمية 1"
+
+msgid "Al Nuaimia 2"
+msgstr "النعيمية 2"
+
+msgid "Al Raqaib 1"
+msgstr "الرقيب 1"
+
+msgid "Al Raqaib 2"
+msgstr "الرقيب 2"
+
+
+msgid "Al Rawda 1 Al Zahraa"
+msgstr "الروضة 1 الزهراء"
+
+msgid "Al Rawda 2 Al Zahraa"
+msgstr "لروضاة 2 الزهراء"
+
+msgid "Al Rawda 3 Al Zahraa"
+msgstr "لروضاة 3 الزهراء"
+
+
+
+msgid "Al Zahra"
+msgstr "الزهراء"
+
+
+msgid "Al Farfar"
+msgstr "الفرفار"
+
+
+msgid "Al Haray"
+msgstr "الحراي"
+
+
+msgid "Al Owaid"
+msgstr "العويد"
+
+
+msgid "Al Taween"
+msgstr "التوين"
+
+
+msgid "Dibba Al Hosn"
+msgstr "دبا الحصن"
+
+msgid "Dibba Industrial Area"
+msgstr "منطقة دبا الصناعية"
+
+msgid "Fujairah Free Trade Zone"
+msgstr "منطقة التجارة الحرة بالفجيرة"
+
+msgid "Fujairah Intl Airport"
+msgstr "مطار الفجيرة الدولي"
+
+msgid "Fujairah Port"
+msgstr "ميناء الفجيرة"
+
+msgid "Halefaath"
+msgstr "حليفة"
+
+msgid "Industrial Area"
+msgstr "منطقة صناعية"
+
+msgid "Karsha"
+msgstr "كارشا"
+
+msgid "Madhab"
+msgstr "مدهب"
+
+msgid "Masafi"
+msgstr "مسافي"
+
+msgid "Merashid"
+msgstr "ميراشيد"
+
+msgid "Mirbah"
+msgstr "مربح"
+
+msgid "Old Fujairah City"
+msgstr "مدينة الفجيرة القديمة"
+
+msgid "Qidfa"
+msgstr "قدفع"
+
+msgid "Rughaylat"
+msgstr "رغيلات"
+
+msgid "Rumailah"
+msgstr "الرميلة"
+
+msgid "Sakamkam"
+msgstr "سكمكم"
+
+msgid "Sharm "
+msgstr "شرم الشيخ "
+
+msgid "Suwayfah"
+msgstr "الصويفة"
+
+msgid "Zubara"
+msgstr "الزبارة"
+
+msgid "Al Darbijaniyah"
+msgstr "الدربجانية"
+
+msgid "Al Dhait North"
+msgstr "الظيت الشمالي"
+
+msgid "Al Dhait South"
+msgstr "الظيت الجنوبي"
+
+msgid "Al Duhaisah"
+msgstr "الدهيسة"
+
+msgid "Al Ghubb"
+msgstr "الغب"
+
+msgid "Al Hamra Free Zone"
+msgstr "المنطقة الحرة بالحمرا"
+
+msgid "Al Hamra Industrial Area"
+msgstr "منطقة الحمرا الصناعية"
+
+msgid "Al Hamra Island"
+msgstr "جزيرة الحمرا"
+
+msgid "Al Hamra Village"
+msgstr "قرية الحمرا"
+
+msgid "Al Hudaibah"
+msgstr "الحضيبة"
+
+msgid "Al Jazeerah Al Hamra"
+msgstr "الجزيرة الحمراء"
+
+msgid "Al Jesser Area"
+msgstr "منطقةمنطقة الجسر"
+
+msgid "Al Juwais Area"
+msgstr "منطقة الجويس"
+
+msgid "Al Kharran"
+msgstr "الخران"
+
+msgid "Al Mairid"
+msgstr "المعيرد"
+
+msgid "Al Marjan Island"
+msgstr "جزيرة المرجان"
+
+msgid "Al Mataf"
+msgstr "المتاف"
+
+msgid "Al Nadiyah"
+msgstr "الندية"
+
+msgid "Al Nakheel Area"
+msgstr "منطقة النخيل"
+
+msgid "Al Nudood"
+msgstr "النودود"
+
+msgid "Al Qurm"
+msgstr "القرم"
+
+msgid "Al Qusaidat"
+msgstr "القصيدات"
+
+msgid "Al Ragibah"
+msgstr "الرجيبة"
+
+msgid "Al Sall"
+msgstr "السل"
+
+msgid "Al Seer"
+msgstr "الصير"
+
+msgid "Al Soor"
+msgstr "السور"
+
+msgid "Al Turfah"
+msgstr "الطرفة"
+
+msgid "Al Uraibi"
+msgstr "العريبي"
+
+
+
+msgid "Burairaat"
+msgstr "بريرات"
+
+msgid "Dafan Al Khor"
+msgstr "دفن الخور"
+
+msgid "Dafan Al Nakheel"
+msgstr "دفن النخيل"
+
+msgid "Dahan"
+msgstr "دهان"
+
+msgid "Digdagga"
+msgstr "Digdagga"
+
+msgid "Ghalilah"
+msgstr "غليلة"
+
+msgid "Hamrania"
+msgstr "حمرانية"
+
+msgid "Khatt"
+msgstr "خت"
+
+msgid "Khazam"
+msgstr "خزام"
+
+msgid "Liwa Badr"
+msgstr "لواء بدر"
+
+msgid "Mamoora"
+msgstr "المعمورة"
+
+msgid "Mina Al arab"
+msgstr "ميناء العرب"
+
+msgid "RAK City"
+msgstr "مدينة رأس الخيمة"
+
+msgid "Rams"
+msgstr "الكباش"
+
+msgid "Ras Al Selaab Area"
+msgstr "منطقة رأس السلاب"
+
+msgid "Refa`ah"
+msgstr "رفاعة"
+
+msgid "Seih Al Ghubb"
+msgstr "سيح الغب"
+
+msgid "Seih Al Hudaibah"
+msgstr "سيح الحضيبة"
+
+msgid "Seih Al Qusaidat"
+msgstr "سيح القصيدات"
+
+msgid "Seih Al Uraibi"
+msgstr "سيح العريبي"
+
+msgid "Seih Shihyar"
+msgstr "سيح شيهار"
+
+msgid "Shamal Haqueel"
+msgstr "شمال حقيل"
+
+msgid "Shamal Julphar"
+msgstr "شمال جلفار"
+
+msgid "Shareesha"
+msgstr "شاريشة"
+
+msgid "Sidroh"
+msgstr "سيدروه"
+
+msgid "Suhaim Area"
+msgstr "منطقة سحيم"
+
+msgid "Wadi Ammar"
+msgstr "وادي عمار"
+
+msgid "Al Aahad"
+msgstr "العهد"
+
+msgid "Al Abrab"
+msgstr "العراب"
+
+msgid "Al Dar Al Baidah"
+msgstr "الدار البيضاء"
+
+msgid "Al Haditha"
+msgstr "الحديثة"
+
+msgid "Al Hawiyah"
+msgstr "الحوية"
+
+msgid "Al Humrah - A"
+msgstr "الحمرة - أ"
+
+msgid "Al Humrah - B"
+msgstr "الحمرة - ب"
+
+msgid "Al Humrah - C"
+msgstr "الحمرة - C."
+
+msgid "Al Humrah - D"
+msgstr "الحمرة - د"
+
+msgid "Al Khor"
+msgstr "الخور"
+
+msgid "Al Limgadhar"
+msgstr "الليمقاد"
+
+msgid "Al Maidan"
+msgstr "الميدان"
+
+msgid "Al Raas - A"
+msgstr "الرس - أ"
+
+msgid "Al Raas - B"
+msgstr "الرس - ب"
+
+msgid "Al Raas - C"
+msgstr "الرس - C."
+
+msgid "Al Ramlah"
+msgstr "الرملة"
+
+msgid "Al Raudah"
+msgstr "الروضة"
+
+msgid "Al Riqqah"
+msgstr "الرقة"
+
+msgid "Al Salamah - A"
+msgstr "السلامة - أ"
+
+msgid "Al Salamah - B"
+msgstr "السلامة - ب"
+
+msgid "Al Salamah - C"
+msgstr "السلامة - C."
+
+msgid "Defence Camp"
+msgstr "معسكر الدفاع"
+
+msgid "Green Belt"
+msgstr "حزام أخضر"
+
+
+
+msgid "Old Town Area"
+msgstr "منطقة المدينة القديمة"
+
+msgid "Umm Al Quwain Marina"
+msgstr "مارينا أم القيوين"
+
+msgid "Abu Hail"
+msgstr "ابو هيل"
+
+msgid "Academic City"
+msgstr "المدينة الأكاديمية"
+
+msgid "Al Awir"
+msgstr "العوير"
+
+msgid "Al Ba`daa"
+msgstr "البدع"
+
+msgid "Al Baraha"
+msgstr "البراحة"
+
+msgid "Al Barari"
+msgstr "البراري"
+
+msgid "Al Barsha 1"
+msgstr "البرشاء 1"
+
+msgid "Al Barsha 2"
+msgstr "البرشاء 2"
+
+msgid "Al Barsha 3"
+msgstr "البرشاء 3"
+
+msgid "Al Barsha South"
+msgstr "البرشاء جنوب"
+
+msgid "Al Dhagaya"
+msgstr "الضغاية"
+
+msgid "Al Furjan"
+msgstr "الفرجان"
+
+msgid "Al Garhoud"
+msgstr "القرهود"
+
+msgid "Al Hamriya"
+msgstr "الحمرية"
+
+msgid "Al Hudaiba"
+msgstr "الحضيبة"
+
+msgid "Al Jaddaf"
+msgstr "الجداف"
+
+msgid "Al Jaffiliya"
+msgstr "الجافلية"
+
+msgid "Al Karama"
+msgstr "الكرامة"
+
+msgid "Al Khabaisi"
+msgstr "الخبيصي"
+
+msgid "Al Khawaneej 1"
+msgstr "الخوانيج 1"
+
+msgid "Al Khawaneej 2"
+msgstr "الخوانيج 2"
+
+
+
+
+
+msgid "Al Manara"
+msgstr "المنارة"
+
+msgid "Al Mankhool"
+msgstr "المنخول"
+
+
+
+
+msgid "Al Mizhar 1"
+msgstr "المزهر 1"
+
+msgid "Al Mizhar 2"
+msgstr "المزهر 2"
+
+msgid "Al Muraqqabat"
+msgstr "المرقبات"
+
+msgid "Al Murar"
+msgstr "المرر"
+
+
+
+
+msgid "Al Muteena"
+msgstr "المطينة"
+
+msgid "Al Nahda 1"
+msgstr "النهدة 1"
+
+msgid "Al Nahda 2"
+msgstr "النهدة 2"
+
+msgid "Al Quoz 1"
+msgstr "القوز 1"
+
+msgid "Al Quoz 2"
+msgstr "القوز 2"
+
+msgid "Al Quoz 3"
+msgstr "القوز 3"
+
+msgid "Al Quoz 4"
+msgstr "القوز 4"
+
+msgid "Al Quoz Industrial Area 1"
+msgstr "منطقة القوز الصناعية 1"
+
+msgid "Al Quoz Industrial Area 2"
+msgstr "منطقة القوز الصناعية 2"
+
+msgid "Al Quoz Industrial Area 3"
+msgstr "منطقة القوز الصناعية 3"
+
+msgid "Al Quoz Industrial Area 4"
+msgstr "منطقة القوز الصناعية 4"
+
+msgid "Al Qusais 1"
+msgstr "القصيص 1"
+
+msgid "Al Qusais 2"
+msgstr "القصيص 2"
+
+msgid "Al Qusais 3"
+msgstr "القصيص 3"
+
+msgid "Al Qusais Industrial Area 1"
+msgstr "منطقة القصيص الصناعية 1"
+
+msgid "Al Qusais Industrial Area 2"
+msgstr "منطقة القصيص الصناعية 2"
+
+msgid "Al Qusais Industrial Area 3"
+msgstr "منطقة القصيص الصناعية 3"
+
+msgid "Al Qusais Industrial Area 4"
+msgstr "منطقة القصيص الصناعية 4"
+
+msgid "Al Qusais Industrial Area 5"
+msgstr "منطقة القصيص الصناعية 5"
+
+msgid "Al Raffa"
+msgstr "الرفاعة"
+
+msgid "Al Ras"
+msgstr "الراس"
+
+msgid "Al Rashidiya"
+msgstr "الراشدية"
+
+msgid "Al Rigga"
+msgstr "الرقة"
+
+
+
+
+msgid "Al Safa"
+msgstr "الصفا"
+
+msgid "Al Safa 2"
+msgstr "الصفا 2"
+
+msgid "Al Satwa"
+msgstr "السطوة"
+
+msgid "Al Shindagha"
+msgstr "الشندغة"
+
+msgid "Al Souq Al Kabeer"
+msgstr "السوق الكبير"
+
+msgid "Al Sufouh 1"
+msgstr "الصفوح 1"
+
+msgid "Al Sufouh 2"
+msgstr "الصفوح 2"
+
+msgid "Al Twar 1"
+msgstr "الطوار 1"
+
+msgid "Al Twar 2"
+msgstr "الطوار 2"
+
+msgid "Al Twar 3"
+msgstr "الطوار 3"
+
+msgid "Al Waheda"
+msgstr "الوحيدة"
+
+msgid "Al Warqa 1"
+msgstr "الورقاء 1"
+
+msgid "Al Warqa 2"
+msgstr "الورقاء 2"
+
+msgid "Al Warqa 3"
+msgstr "الورقاء 3"
+
+msgid "Al Warqa 4"
+msgstr "الورقاء 4"
+
+msgid "Al Warqa 5"
+msgstr "الورقاء 5"
+
+msgid "Al Wasl"
+msgstr "الوصل"
+
+msgid "Arabian Ranches"
+msgstr "المرابع العربية"
+
+msgid "Arabian Ranches 2"
+msgstr "المرابع العربية 2"
+
+msgid "Arjan"
+msgstr "ارجان"
+
+msgid "Barsha Heights - TECOM"
+msgstr "برشا هايتس - تيكوم"
+
+msgid "Bukadra"
+msgstr "بوكدره"
+
+msgid "Business Bay"
+msgstr "خليج الأعمال"
+
+msgid "Corniche Deira"
+msgstr "كورنيش ديرة"
+
+msgid "DIFC"
+msgstr "مركز دبي المالي العالمي"
+
+msgid "Discovery Gardens"
+msgstr "ديسكفري جاردنز"
+
+msgid "Downtown Burj Khalifa"
+msgstr "وسط مدينة برج خليفة"
+
+msgid "Downtown Jabel Ali"
+msgstr "وسط مدينة جبل علي"
+
+msgid "Dubai Airport Freezone"
+msgstr "المنطقة الحرة بمطار دبي"
+
+msgid "Dubai Cargo Village"
+msgstr "قرية دبي للشحن"
+
+msgid "Dubai Design District"
+msgstr "حي دبي للتصميم"
+
+msgid "Dubai Falcon City"
+msgstr "دبي فالكون سيتي"
+
+msgid "Dubai Festival City"
+msgstr "دبي فيستيفال سيتي"
+
+msgid "Dubai Healthcare City"
+msgstr "مدينة دبي الطبية"
+
+msgid "Dubai International Airport"
+msgstr "مطار دبي الدولي"
+
+msgid "Dubai Internet City - DIC"
+msgstr "مدينة دبي للإنترنت - مدينة دبي للإنترنت"
+
+msgid "Dubai Investments Park 1"
+msgstr "مجمع دبي للاستثمار 1"
+
+msgid "Dubai Investments Park 2"
+msgstr "مجمع دبي للاستثمار 2"
+
+msgid "Dubai Lifestyle City"
+msgstr "مدينة دبي لايف ستايل"
+
+msgid "Dubai Marina"
+msgstr "مرسى دبي"
+
+msgid "Dubai Maritime City"
+msgstr "مدينة دبي الملاحية"
+
+msgid "Dubai Media City"
+msgstr "مدينة دبي للإعلام"
+
+msgid "Dubai Motor City"
+msgstr "دبي موتور سيتي"
+
+msgid "Dubai Silicon Oasis"
+msgstr "واحة دبي للسيليكون"
+
+msgid "Dubai Sports City"
+msgstr "مدينة دبي الرياضية"
+
+msgid "Dubai Studio City"
+msgstr "مدينة دبي للاستوديوهات"
+
+msgid "Dubai Techno Park"
+msgstr "دبي تكنو بارك"
+
+msgid "Dubai World Central - DWC"
+msgstr "دبي وورلد سنترال - DWC"
+
+msgid "Dubai World Trade Center - DWTC"
+msgstr "مركز دبي التجاري العالمي - مركز دبي التجاري العالمي"
+
+msgid "Emirates Hills"
+msgstr "تلال الإمارات"
+
+msgid "Gardens"
+msgstr "حدائق"
+
+msgid "Global Village"
+msgstr "قرية عالمية"
+
+msgid "Green Community Motor City"
+msgstr "جرين كوميونيتي موتور سيتي"
+
+msgid "Hor Al Anz"
+msgstr "هور العنز"
+
+msgid "Hor Al Anz East"
+msgstr "هور العنز شرق"
+
+msgid "Ibn Batutta Mall"
+msgstr "ابن بطوطة مول"
+
+msgid "IMPZ"
+msgstr "IMPZ"
+
+msgid "International City"
+msgstr "مدينة عالمية"
+
+msgid "International City 2"
+msgstr "المدينة العالمية 2"
+
+msgid "Jebel Ali 1"
+msgstr "جبل علي 1"
+
+msgid "Jebel Ali 2"
+msgstr "جبل علي 2"
+
+msgid "Jebel Ali Freezone"
+msgstr "المنطقة الحرة بجبل علي"
+
+msgid "Jebel Ali Freezone Extension"
+msgstr "امتداد المنطقة الحرة بجبل علي"
+
+msgid "Jebel Ali Industrial Area"
+msgstr "المنطقة الصناعية بجبل علي"
+
+msgid "Jumeirah 1"
+msgstr "جميرا 1"
+
+msgid "Jumeirah 2"
+msgstr "جميرا 2"
+
+msgid "Jumeirah 3"
+msgstr "جميرا 3"
+
+msgid "Jumeirah Beach Residence - JBR"
+msgstr "جميرا بيتش ريزيدنس - جميرا بيتش ريزيدنس"
+
+msgid "Jumeirah Golf Estates"
+msgstr "عقارات جميرا للجولف"
+
+msgid "Jumeirah Heights"
+msgstr "مرتفعات جميرا"
+
+msgid "Jumeirah Islands"
+msgstr "جزر الجميرا"
+
+msgid "Jumeirah Lakes Towers - JLT"
+msgstr "أبراج بحيرات جميرا - أبراج بحيرات جميرا"
+
+msgid "Jumeirah Park"
+msgstr "جميرا بارك"
+
+msgid "Jumeirah Village Circle - JVC"
+msgstr "قرية جميرا الدائرية - قرية جميرا الدائرية"
+
+msgid "Jumeirah Village Triangle - JVT"
+msgstr "مثلث قرية الجميرا - مثلث قرية الجميرا"
+
+msgid "Knowledge Village"
+msgstr "قرية المعرفة"
+
+msgid "Layan Community"
+msgstr "مجتمع ليان"
+
+msgid "Legends"
+msgstr "أساطير"
+
+msgid "Liwan"
+msgstr "ليوان"
+
+msgid "Majan"
+msgstr "مجان"
+
+msgid "MBR- Al Merkad"
+msgstr "MBR- المرقاد"
+
+msgid "Meadows"
+msgstr "المراعي"
+
+msgid "Meydan South"
+msgstr "ميدان الجنوب"
+
+msgid "Mira Community"
+msgstr "مجتمع ميرا"
+
+msgid "Mirdif"
+msgstr "مردف"
+
+msgid "Mudon"
+msgstr "مدن"
+
+msgid "Muhaisnah 1"
+msgstr "محيصنة 1"
+
+msgid "Muhaisnah 2"
+msgstr "محيصنة 2"
+
+msgid "Muhaisnah 3"
+msgstr "محيصنة 3"
+
+msgid "Muhaisnah 4"
+msgstr "محيصنة 4"
+
+msgid "Nad Al Sheba 1"
+msgstr "ند الشبا 1"
+
+msgid "Nad Al Sheba 2"
+msgstr "ند الشبا 2"
+
+msgid "Nad Al Sheba 3"
+msgstr "ند الشبا 3"
+
+msgid "Nad Al Sheba 4"
+msgstr "ند الشبا 4"
+
+msgid "Nadd Al Hamar"
+msgstr "ند الحمر"
+
+msgid "Nadd Al Shamma"
+msgstr "ند الشما"
+
+msgid "Naif"
+msgstr "نايف"
+
+msgid "Oud Al Muteena"
+msgstr "عود المطينة"
+
+msgid "Oud Metha"
+msgstr "عود ميثاء"
+
+msgid "Port Rashid"
+msgstr "ميناء راشد"
+
+msgid "Port Saeed"
+msgstr "بور سعيد"
+
+msgid "Ras Al Khor"
+msgstr "رأس الخور"
+
+msgid "Ras Al Khor Indsutrial Area 1"
+msgstr "منطقة رأس الخور الصناعية 1"
+
+msgid "Ras Al Khor Indsutrial Area 2"
+msgstr "منطقة رأس الخور الصناعية 2"
+
+msgid "Ras Al Khor Indsutrial Area 3"
+msgstr "منطقة رأس الخور الصناعية 3"
+
+msgid "Remraam"
+msgstr "رمرام"
+
+msgid "Rigga Al Buteen"
+msgstr "رقة البطين"
+
+msgid "Springs"
+msgstr "الينابيع"
+
+msgid "The Greens"
+msgstr "الخضر"
+
+msgid "The Lakes"
+msgstr "البحيرات"
+
+msgid "The Palm Deira"
+msgstr "جزيرة النخلة ديرة"
+
+msgid "The Palm Jebel Ali"
+msgstr "نخلة جبل علي"
+
+msgid "The Palm Jumeirah"
+msgstr "جزيرة النخلة جميرا"
+
+msgid "The Skycourts"
+msgstr "سكاي كورتس"
+
+msgid "The Sustainable City"
+msgstr "المدينة المستدامة"
+
+msgid "The Villa"
+msgstr "الفيلا"
+
+msgid "Um Al Sheif"
+msgstr "أم الشيف"
+
+msgid "Umm Hurair 1"
+msgstr "أم هرير 1"
+
+msgid "Umm Hurair 2"
+msgstr "أم هرير 2"
+
+msgid "Umm Ramool"
+msgstr "أم رمول"
+
+msgid "Umm Suqeim 1"
+msgstr "أم سقيم 1"
+
+msgid "Umm Suqeim 2"
+msgstr "أم سقيم 2"
+
+msgid "Umm Suqeim 3"
+msgstr "أم سقيم 3"
+
+msgid "Wadi Alamardi"
+msgstr "وادي العمردي"
+
+msgid "Warsan 1"
+msgstr "ورسان 1"
+
+msgid "Warsan 2"
+msgstr "ورسان 2"
+
+msgid "Waterfront"
+msgstr "الواجهة البحرية"
+
+msgid "Za`abeel 1"
+msgstr "زعبيل 1"
+
+msgid "Za`abeel 2"
+msgstr "زعبيل 2"
+
+msgid "Abu Dhabi Gate City"
+msgstr "مدينة بوابة أبوظبي"
+
+msgid "Abu Dhabi Hills"
+msgstr "تلال أبوظبي"
+
+msgid "Al Adla "
+msgstr "العدلة"
+
+msgid "Al Aman"
+msgstr "الامان"
+
+msgid "Al Bahya"
+msgstr "الباهية"
+
+msgid "Al Bandar (Al Raha)"
+msgstr "البندر (الراحة)"
+
+msgid "Al Dafrah"
+msgstr "الظفرة"
+
+msgid "Al Etihad"
+msgstr "الاتحاد"
+
+msgid "Al Falah City"
+msgstr "مدينة الفلاح"
+
+msgid "Al Forsan Village (Khalifa- A)"
+msgstr "قرية الفرسان (خليفة أ)"
+
+msgid "Al Gurum Resort"
+msgstr "منتجع القرم"
+
+msgid "Al Hosn"
+msgstr "الحصن"
+
+msgid "Al Karamah"
+msgstr "الكرامة"
+
+msgid "Al Khalidiyah"
+msgstr "الخالدية"
+
+msgid "Al Khubeirah"
+msgstr "الخبيرة"
+
+msgid "Al Mafraq"
+msgstr "المفرق"
+
+msgid "Al Manhal"
+msgstr "المنهل"
+
+msgid "Al Maqta"
+msgstr "المقطع"
+
+msgid "Al Markaziyah"
+msgstr "المركزية"
+
+msgid "Al Markaziyah West"
+msgstr "المركزية غرب"
+
+msgid "Al Maryah Island"
+msgstr "جزيرة الماريه"
+
+msgid "Al Mina"
+msgstr "الميناء"
+
+msgid "Al Muneera (Al Raha)"
+msgstr "المنيرة (الراحة)"
+
+msgid "Al Muntazah"
+msgstr "المنتزه"
+
+
+
+msgid "Al Mushrif"
+msgstr "المشرف"
+
+msgid "Al Muzoon"
+msgstr "المزون"
+
+msgid "Al Nahyan"
+msgstr "آل نهيان"
+
+msgid "Al Raha"
+msgstr "الراحة"
+
+msgid "Al Rahba"
+msgstr "الرحبة"
+
+msgid "Al Ras Al Akhdar"
+msgstr "الراس الاخضر"
+
+msgid "Al Rayyana (Khalifa- A)"
+msgstr "الريانة (خليفة أ)"
+
+msgid "Al Reef"
+msgstr "الريف"
+
+msgid "Al Rowdah"
+msgstr "الروضة"
+
+msgid "Al Ruwais (Western Region)"
+msgstr "الرويس (المنطقة الغربية)"
+
+msgid "Al Safarrat"
+msgstr "السفارات"
+
+msgid "Al Samha"
+msgstr "السمحة"
+
+msgid "Al Shamkha"
+msgstr "الشامخة"
+
+msgid "Al Shamkha South"
+msgstr "الشامخة الجنوبي"
+
+msgid "Al Shawamekh"
+msgstr "الشوامخ"
+
+msgid "Al Wahdah"
+msgstr "الوحدة"
+
+msgid "Al Wathba "
+msgstr "الوثبة"
+
+msgid "Al Zaab"
+msgstr "الزعاب"
+
+msgid "Al Zafranah"
+msgstr "الزعفرانة"
+
+msgid "Al Zahraa"
+msgstr "الزهراء"
+
+msgid "Al Zeina (Al Raha)"
+msgstr "الزينة (الراحة)"
+
+msgid "Bain Al Jesrain"
+msgstr "بين الجسرين"
+
+msgid "Bani Yas"
+msgstr "بني ياس"
+
+msgid "BreakWater"
+msgstr "حائل الأمواج"
+
+msgid "Capital Centre"
+msgstr "مركز العاصمة"
+
+msgid "Dhow Harbour (Al Mina)"
+msgstr "ميناء الداو (الميناء)"
+
+msgid "Golf Gardens (Khalifa- A)"
+msgstr "حدائق الجولف (خليفة أ)"
+
+msgid "Hydra Village (Shahama)"
+msgstr "قرية هيدرا (الشهامة)"
+
+msgid "Khor Al Bateen"
+msgstr "خور البطين"
+
+msgid "Madinat Khalifa - A"
+msgstr "مدينة خليفة - أ"
+
+msgid "Madinat Khalifa - B"
+msgstr "مدينة خليفة - ب"
+
+msgid "Madinat Khalifa - C"
+msgstr "مدينة خليفة - سي"
+
+msgid "Madinat Zayed"
+msgstr "مدينة زايد"
+msgid "Dubai"
+msgstr "دبي"
+
+msgid "Abu Dhabi"
+msgstr "أبو ظبي"
+
+msgid "Sharjah"
+msgstr "الشارقة"
+
+msgid "Ajman"
+msgstr "عجمان"
+
+msgid "Al Ain"
+msgstr "العين"
+
+msgid "Fujairah"
+msgstr "الفجيرة"
+
+msgid "Ras Al Khaima"
+msgstr "رأس الخيمة"
+
+msgid "Umm Al-Quwain"
+msgstr "أم القيوين"
+
+msgid "Al Zahya"
+msgstr "الزاهية"
+
+msgid "Al Zawarah"
+msgstr "الزوارة"
+
+msgid "Al Zora"
+msgstr "الزوراء"
+
+msgid "Emirates City"
+msgstr "مدينة الإمارات"
+
+msgid "Emirates City Extension"
+msgstr "امتداد مدينة الإمارات"
+
+msgid "Garden City"
+msgstr "جاردن سيتي"
+
+msgid "Ittihad Village"
+msgstr "قرية الاتحاد"
+
+msgid "Masfout"
+msgstr "مصفوت"
+
+msgid "Al Agabiyya"
+msgstr "العجبية"
+
+msgid "Al Ain International Airport"
+msgstr "مطار العين الدولي"
+
+msgid "Al Ain Mall"
+msgstr "العين مول"
+
+msgid "Al Ain Oasis Villas"
+msgstr "فلل واحة العين"
+
+msgid "Al Ain Zoo"
+msgstr "حديقة حيوانات العين"
+
+msgid "Al Ameriya"
+msgstr "العامرية"
+
+msgid "Al Bateen"
+msgstr "البطين"
+
+msgid "Al Dhahir"
+msgstr "الظاهر"
+
+msgid "Al Foaa"
+msgstr "الفوعه"
+
+msgid "Al Hili"
+msgstr "الهيلي"
+
+msgid "Al Jahili"
+msgstr "الجاهلي"
+
+msgid "Al Jimi"
+msgstr "الجيمي"
+
+msgid "Al Khabisi"
+msgstr "الخبيصي"
+
+msgid "Al Kuwaitat"
+msgstr "الكويتات"
+
+msgid "Al Maqam"
+msgstr "المقام"
+
+msgid "Al Marakhaniya"
+msgstr "المرخانية"
+
+msgid "Al Masoudi"
+msgstr "المسعودي"
+
+msgid "Al Murabaa"
+msgstr "المربع"
+
+msgid "Al Muraijeb"
+msgstr "المريجيب"
+
+msgid "Al Mutarad"
+msgstr "المعترض"
+
+msgid "Al Mutawaa"
+msgstr "المطاوعة"
+
+msgid "Al Muwaiji"
+msgstr "المويجعي"
+
+msgid "Al Nabagh"
+msgstr "النباغ"
+
+msgid "Al Neyadat"
+msgstr "النيادات"
+
+msgid "Al Qattara"
+msgstr "القطارة"
+
+msgid "Al Salamat District"
+msgstr "حي السلامات"
+
+msgid "Al Sarooj"
+msgstr "الصاروج"
+
+msgid "Al Shabiya"
+msgstr "الشعبية"
+
+msgid "Al Towayya"
+msgstr "الطوية"
+
+msgid "Al Yahar"
+msgstr "اليحر"
+
+msgid "Alain Al Fiyada"
+msgstr "العين الفياضة"
+
+msgid "Asharej"
+msgstr "عشارج"
+
+msgid "Bedda Bn Ammar"
+msgstr "بددة بن عمار"
+
+msgid "Falaj Hazzaa"
+msgstr "فلج هزاع"
+
+msgid "Manazaf"
+msgstr "المنازف"
+
+msgid "Mezyed"
+msgstr "مزيد"
+
+msgid "Mubzara"
+msgstr "مبزرة"
+
+msgid "Neima"
+msgstr "نعمة"
+
+msgid "Tawam"
+msgstr "توام"
+
+msgid "UAE University 1"
+msgstr "جامعة الإمارات 1"
+
+msgid "UAE University 2"
+msgstr "جامعة الإمارات 2"
+
+msgid "Um Ghaffa"
+msgstr "أم غافة"
+
+msgid "Al Rumailah"
+msgstr "الرميلة"
+
+msgid "Al Tallah 1"
+msgstr "التلة 1"
+
+msgid "Al Tallah 2"
+msgstr "التلة 2"
+
+msgid "Al Yasmeen"
+msgstr "الياسمين"
+
+msgid "Al Rashidiya 1"
+msgstr "الراشدية 1"
+
+msgid "Al Rashidiya 2"
+msgstr "الراشدية 2"
+
+msgid "Al Rashidiya 3"
+msgstr "الراشدية 3"
+
+msgid "Al Jurf 1"
+msgstr "الجرف 1"
+
+msgid "Al Jurf 2"
+msgstr "الجرف 2"
+
+msgid "Al Bustan"
+msgstr "البستان"
+
+msgid "Al Alia"
+msgstr "عالية"
+
+msgid "Ajman Pearl"
+msgstr "لؤلؤة عجمان"
+
+msgid "Ajman City Center"
+msgstr "عجمان سيتي سنتر"
+
+msgid "Al Aqah"
+msgstr "العقة"
+
+msgid "Al Bedia "
+msgstr "البدية"
+
+msgid "Al Buthna "
+msgstr "البثنة"
+
+msgid "Zakher"
+msgstr "زاخر"
+
+msgid "Dibba"
+msgstr "دبا"
+
+msgid "Dedna"
+msgstr "ديدنا"
+
+msgid "Awhala "
+msgstr "أوحالة"
+
+msgid "Anajaimat"
+msgstr "أناجيمات"
+
+msgid "Albeledah"
+msgstr "البليدة"
+
+msgid "Al Qurayya"
+msgstr "القريه"
+
+msgid "Al Ittihad"
+msgstr "الاتحاد"
+
+msgid "Al Heel "
+msgstr "الحيل"
+
+msgid "Al Hala "
+msgstr "الهلا"
+
+msgid "Al Gurfa"
+msgstr "الغرفة"
+
+msgid "Al Faseel"
+msgstr "الفصيل"
+
+
+msgid "search"
+msgstr "بحث"

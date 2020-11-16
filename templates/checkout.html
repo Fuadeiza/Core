@@ -1,0 +1,116 @@
+{% extends "template.html" %}
+{% load static %}
+{% load i18n %}
+{% block head %}
+<title>Baskotii | Checkout</title>
+{% endblock %}
+
+{% block content %}
+        <!-- The small order section -->
+        <section id="section-order-flavour">
+
+            <!-- Order Container -->
+            <div class="container">
+
+                <!-- Logo -->
+                <div class="container__logo" style="display: none;">
+                    <img class="content-center__logo" src="{% static 'img/logo-light.png' %}" alt="logo">
+                    <div class="content-center__text">
+                        <h1 class="content-center__name">{% trans 'Baskotii' %}</h1>
+                        <p class="content-center__desc">{% trans 'Emarati Biscuits' %}</p>
+                    </div>
+                </div>
+
+                <div class="container__back"
+                style="margin-top: 1rem; margin-left: 1rem;">
+                    <a href="{% url "core:order" %}"> {%if LANGUAGE_CODE == 'ar' %}
+
+                        <i class="fas fa-2x fa-long-arrow-alt-right"></i>
+                        {%else%}
+                
+                        <i class="fas fa-2x fa-long-arrow-alt-left"></i>
+                        {% endif %}</a>
+                    <h1>{% trans "Checkout" %}</h1>
+                </div>
+
+                    <!-- Contact Info -->                        
+                        <div class="container__info">
+                            <i class="fas fa-2x fa-home"></i>
+                            <div class="container__info-text">
+                                <h3 id="area">
+                                </h3>
+                            </div>
+                                
+                                {%if LANGUAGE_CODE == 'ar' %}
+
+                                <a href="{% url 'core:select_area' %}?redirect=contact" style="margin-right: auto;"><i class="fas fa-angle-left"></i>
+                                {%else%}
+                        
+                                <a href="{% url 'core:select_area' %}?redirect=contact" style="margin-left: auto;"><i class="fas fa-angle-right"></i>
+                                {% endif %}</a>
+    
+                        </div>
+
+                        <h2 class="container__contact">{% trans "Contact Information" %}</h2>
+                        <form>
+                        <input type="text" required name="name" class="container__input" placeholder="Name">
+                        <input type="number" required name="phone" class="container__input" placeholder="Phone Number">
+                        <input type="email" required name="email" class="container__input" placeholder="Email">
+
+
+                        <h2 class="container__contact">{% trans "Delivery Address" %}</h2>
+                        <!-- <h3 class="container__unit"></h3>
+                        <select name="" id="" class="container__select">
+                            <option value="" class="container__select-type">House</option>
+                            <option value="" class="container__select-type">Apartment</option>
+                            <option value="" class="container__select-type">Office</option>
+                        </select> -->
+
+                        
+                        <!-- Address Info -->
+                        <input type="text" required name="street" class="container__input" placeholder="Street">
+                        <input type="text" required name="house" class="container__input" placeholder="House no">
+                        <input type="text" name="specific_directions" class="container__input" placeholder="Special Directions">
+
+                        <!-- Button -->
+                        <button style="border: none; color: black; cursor: pointer;" class="container__btn">{% trans "Place Order" %}</button>
+                    </form>
+            </div>
+        </section>
+{% endblock %}
+
+
+{% block javascript %}
+
+<script>
+    if(!ST.eligible_for_order()){
+        window.location.href = "{% url 'core:index' %}";
+    }
+
+    document.querySelector('form').addEventListener('submit',(event)=>{
+        event.preventDefault()
+        if(!ST.data.area){
+        alert("Please Select the area first")
+        }else{
+            window.location.href = "{% url 'core:confirm' %}";
+        }
+    })
+
+    document.querySelectorAll('.container__input').forEach((item)=>{
+        item.value = ST.data[item.name]
+
+        item.addEventListener("input",()=>{
+            ST.edit_property(item.name,item.value)
+        })
+    })
+
+    if(!ST.data.area){
+        document.querySelector("#area").innerHTML = 'Select Area'
+    }else{
+        document.querySelector("#area").innerHTML = ST.data.area
+    }
+    
+
+</script>
+
+{% endblock %}

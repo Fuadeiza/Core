@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% load static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<html  {%if LANGUAGE_CODE == "ar" %} dir ='rtl' {%endif%}  lang="{{ LANGUAGE_CODE }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3794c64bd4.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="apple-touch-icon" href="{% static "img/logo-light.png" %}">
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700" />
+    <link rel="shortcut icon" href="{% static "img/logo-light.png" %}"
+    type="image/x-icon"> {% block head %} {% endblock %}
+  </head>
+  <body>
+    <!-- The main wrapper -->
+    <main id="app">
+      {% block content %} {% endblock %}
+
+      <!-- The big background section -->
+      <section id="section-bg">
+        <nav class="nav">
+          <!-- Main Navigation -->
+          <ul class="nav__list" id="myLinks">
+            <li class="nav__list-item">
+              <a href="{% url 'core:index' %}">{% trans "Menu" %}</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="{% url 'core:search' %}">{% trans "Search" %}</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="{% url 'core:track' %}">{% trans "Order Status" %}</a>
+          </ul>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()" style="display: none;">
+            <i class="fa fa-bars"></i>
+          </a>
+
+          <!-- Cart -->
+          <a href="" class="nav__cart"><i class="fas fa-shopping-bag"></i></a>
+
+          <!-- Language Toggle -->
+          <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+            <input name="next" type="hidden" onclick="myFunct" value="{{ redirect_to }}" />
+            
+           {%if LANGUAGE_CODE == 'ar' %}
+
+           <input type="hidden" name="language" value="en">
+           <input type="submit" class="nav__language" value="EN" />
+           {%else%}
+
+           <input type="hidden" name="language" value="ar">
+           <input type="submit" class="nav__language" value="ع" />
+           {% endif %}
+
+        </form>
+
+          <!-- Center Content -->
+          <div class="content-center">
+            <img
+              class="content-center__logo"
+              src="{% static 'img/logo-light.png' %}"
+              alt="logo"
+            />
+            <h1 class="content-center__name"> {% trans 'Baskotii' %}</h1>
+            <p class="content-center__desc">{%trans 'Emarati Biscuits' %}</p>
+          </div>
+        </nav>
+      </section>
+    </main>
+    <script src="{% static 'js/app.js' %}"></script>
+    <script src="{% static 'js/structure.js' %}"></script>
+  
+      
+
+    {% block javascript %} {% endblock %}
+  </body>
+</html>

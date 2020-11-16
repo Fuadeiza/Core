@@ -1,0 +1,92 @@
+{% extends "template.html" %}
+{% load static %}
+{% load i18n %}
+{% load trans_tag %}
+{% block head %}
+<title>Baskotii | Flouvor</title>
+{% endblock %}
+
+{% block content %}
+        <!-- The small order section -->
+        <section id="section-order-flavour">
+
+            <!-- Order Container -->
+            <div class="container">
+
+                <!-- Logo -->
+                <div class="container__logo" style="display: none;">
+                    <img class="content-center__logo" src="{% static 'img/logo-light.png' %}" alt="logo">
+                    <div class="content-center__text">
+                        <h1 class="content-center__name">{% trans 'Baskotii' %}</h1>
+                        <p class="content-center__desc">{% trans 'Emarati Biscuits' %}</p>
+                    </div>
+                </div>
+
+                <div class="container__back"
+                style="margin-bottom: 0; margin-top: 1rem; margin-left: 1rem;">
+                    <a href="{% url 'core:product' product.pk %}">
+                        {%if LANGUAGE_CODE == 'ar' %}
+
+                        <i class="fas fa-2x fa-long-arrow-alt-right"></i>
+                        {%else%}
+                
+                        <i class="fas fa-2x fa-long-arrow-alt-left"></i>
+                        {% endif %}</a>
+                    <h1>{%trans product.name %} {%trans flavour.name %}</h1>
+                </div>
+
+                <!-- Flavour -->
+                <div class="container__flavour">
+                    <img src="{{ flavour.image.url }}" alt="Poruduct">
+                    <h2>{{flavour.name|template_trans }}</h2>
+                        <div class="container__flavour-price">
+                            <p>{% trans 'Price' %}</p>
+                            <p>AED {{ flavour.price }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quantity -->
+                <div class="container__quanitity">
+                    <i class="fas fa-plus-circle"></i>
+                    <p id="current">{%trans quantity %}</p>
+                    <i class="fas fa-minus-circle"></i>
+                </div>
+
+                <!-- Button -->
+                <a class="container__btn" href="#">{% trans 'Add to order' %}</a>
+            </div>
+        </section>
+
+{% endblock %}
+
+
+{% block javascript %}
+
+<script>
+    let plus = document.querySelector(".fa-plus-circle")
+    let minus = document.querySelector(".fa-minus-circle")
+    let btn = document.querySelector(".container__btn")
+    let current = document.getElementById("current")
+
+    let id = {{ flavour.pk }}
+    current.innerHTML = ST.get_quantity(id)
+
+    plus.addEventListener("click", ()=>{
+        current.innerText = parseInt(current.innerText) + 1
+    })
+
+    minus.addEventListener("click", ()=>{
+        if(parseInt(current.innerText) != 1){
+            current.innerText = parseInt(current.innerText) - 1
+        }
+    })
+
+    btn.addEventListener("click",(event)=>{
+        ST.add_item(id,'{{ product.name }}','{{ flavour.name }}',{{ flavour.price }},parseInt(current.innerText))
+        window.location.href = "{% url 'core:product' product.pk %}";
+    })
+
+</script>
+
+{% endblock %}
